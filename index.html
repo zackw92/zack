@@ -5,28 +5,48 @@
 </head>
 <body>
 <header>
-<h1><a href="#"><img src="pic/logo.jpg" alt="Return to the homepage"/></a></h1>
+
 
 <nav>
+    <a  class= "logo" href="#"><img src="pic/logo.png" alt="Return to the homepage"/></a>
+
+	<input type="checkbox" id="nav"/><label for="nav"></label>
+	
 	<ul>
-<li><a href="#">Events</a></li>
-<li><a href="#">Books</a></li>
-<li><a href="#">Interview</a></li>
-<li><a href="#">Contact</a></li>
+
+		<li><a href="index.html">Home</a></li>	
+		<li><a href="Event.html">Events</a></li>
+		<li><a href="Books.html">Books</a></li>
+		<li><a href="Media.html">Media</a></li>
+		<li><a href="Contact.html">Contact</a></li>
 	</ul>
 </nav>
+
+<form>
+	<input type="search" placeholder="Search">
+</form>
+
 </header>
-<section id="paulgraham">
-<a href="#"><img src="pic/paulgraham.jpg">
-</a>
+
+<div class="paulgraham">
+      <a href="#"><img src="pic/paulgraham.jpg"></a>
+      <h2>PAUL GRAHAM</h2>
+      <h3>English programmer /Venture Capitalist/ Essayist</h3>
+      <a class="ca3-scroll-down-link ca3-scroll-down-arrow" href="#bio"></a>
+      <a class="ca4-scroll-down-link ca4-scroll-down-arrow"></a>
+      <button class="bio"><a href="#bio">KNOW MORE ABOUT ME</a></button>
+ </div>
+
+<a name="bio" style="display:block"></a>
+<section>
+     <h4>Hey there, nice to meet you !</h4>
+      <h5>Paul Graham is known for his work on Lisp, for co-founding 
+	      Viaweb (which eventually became Yahoo Store), and for co-founding 
+	      the Y Combinator seed capital firm. He is the author of some programming books, such as: On Lisp(1993), ANSI Common Lisp(1995), and Hackers & Painters(2004).</h5>
+
 </section>
+
 </body>
 
-<form id="search-form" method="post" action="#">
-  <p role="search">
-    <label for="query">Looking for something?</label>
-    <input type="text" name="keywords" id="query" value="" placeholder="search...">
-    <button type="submit">Search</button>
-  </p>
-</form>
+
 </html>
